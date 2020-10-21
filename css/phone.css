@@ -1,0 +1,26 @@
+body{
+    background-color: red;
+}
+#services{
+    flex-direction: column;
+}
+#navbar{
+    flex-direction: column;
+}
+#home{
+    height: 370px;
+    padding: 62px 40px;
+
+}
+#home::before{
+    height: 418px;
+}
+#home p{
+    font-size: 13px;
+}
+#navbar{
+    flex-direction: column;
+}
+#primary{
+    font-size: 25px;
+}

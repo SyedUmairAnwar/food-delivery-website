@@ -1,0 +1,195 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color:white;
+
+}
+:root{
+    --navbar-height:59px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+position:absolute;
+top: 0px;
+}
+ img{
+    width: 80px;
+    height: 80px;
+    padding: 10px 0px;
+    margin: 10px;
+}
+#logo{
+    width: 83px;
+    height: 119px;
+    margin: 2px 3px;
+    filter: invert(100%);
+    
+}  
+#navbar ul{
+       display: flex;
+
+} 
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+} 
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 2px 23px;
+    font-family: 'Grandstander', cursive;
+    border-radius: 10px;
+    text-decoration: none;}
+#navbar ul li a:hover{
+    color: red;
+    background-color: white;
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.0;
+    top: 10px;
+    left: 10px;
+}
+#home{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 3px 200px;
+margin: 11px;
+height: 640px;
+position: relative;
+}
+#home::before{
+    content: "";
+background: url('../food2.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    opacity: 0.9;
+}
+#primary{
+    font-size: 45px;
+    padding: 15px;
+    font-family: 'Trochut', cursive;
+}
+#home p{
+    font-size: 18px;
+    font-family: 'Baloo Tamma 2', cursive;
+    text-align-last: auto;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid red;
+    color: white;
+    background-color: brown;
+    cursor: pointer;
+    margin: 17px;
+    font-size: 20px;
+    border-radius: 10px;
+
+}
+.center{
+    text-align: center;
+}
+.h-secondary{
+    padding: 12px;
+    font-size: 35px;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+#services{
+    display: flex;
+    padding: 34px;
+}
+#services .box{
+    border: 2px solid red;
+    margin: 4px 20px;
+    padding: 10px;
+    border-radius: 23px;
+    background-color: rgb(179, 80, 45);
+}
+#services .box img{
+    height: 100px;
+    margin: auto;
+    display: block;
+
+}
+.primary1{
+    font-size: 60px;
+    padding: 15px;
+    font-family: 'Trochut', cursive;
+    text-align: center;
+}
+#services .box p{
+    font-family: 'Baloo Tamma 2', cursive;
+}
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#client-section{
+    height: 300px;
+    position: relative;
+}
+.clients img{
+    height: 100px;
+    width: 100px;
+
+}
+.client-item{
+    padding: 20px;
+}
+#client-section::before{
+    content: "";
+    background: url('../client.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#contact{
+position: relative;
+}
+#contact::before{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('../contact.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.3;
+    content: "";
+}
+.from-group{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+form input{
+    display: block;
+    margin:10px auto;
+    border-radius: 20px;
+    padding: 3px;
+    width: 200px;
+    font-size: 15px;
+
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px;
+}
